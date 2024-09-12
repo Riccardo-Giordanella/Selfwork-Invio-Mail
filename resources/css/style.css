@@ -6,3 +6,10 @@
 .navbar{
     background-color: gray;
 }
+
+.bg-custom{
+    background-image: url('../../public/media/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
