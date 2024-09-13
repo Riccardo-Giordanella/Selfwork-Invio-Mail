@@ -21,7 +21,6 @@ class FormController extends Controller
         ];
 
         Mail::to('sito@noreply.com')->send(new AdminMail($contactMail));
-        Mail::to($contactMail['email'])->send(new UserMail($contactMail));
 
         return redirect()->back()->with('success', 'Il messaggio è stato inviato correttamente');
     }
